@@ -1,0 +1,115 @@
+
+/*GENERAL STYLING*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+a,a:visited,a:active{
+    text-decoration: none;
+    color:black;
+}
+
+
+a:hover{
+    color:grey;
+    text-decoration: underline;
+}
+
+/*Layout*/
+#site-name{
+    text-align: center;
+    pointer-events: none;
+}
+
+#main-nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#main-nav li {
+    display: inline-block;
+    padding:5px 20px;
+    margin-left:20px;
+}
+
+#footer{
+    text-align:center;
+}
+
+/*Home*/
+#hero{
+    position:relative;
+}
+
+#hero-image{
+
+   width:80%;
+   
+   margin:0 auto;
+   display: block;
+}
+
+#hero h1, #hero p{
+    position: absolute;
+    width:100%;
+    text-align: center;
+}
+
+#hero h1 {
+    top:50px; 
+}
+
+#hero p{
+    top:120px;
+}
+
+.bestseller{
+    text-align: center;
+}
+
+
+
+.flex-container{
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.item1,.item2,.item3{
+    flex: 1 0 0;
+}
+
+.item1 img,.item2 img,.item3 img {
+    max-width:300px;
+}
+
+
+
+ @media only screen and (max-width: 900px){
+    #hero h1 {
+        top:10px; 
+    }
+    
+    #hero p{
+        top:80px;
+    }
+  } 
+
+  @media only screen and (max-width: 768px){
+    #hero h1 {
+        font-size: 20px;
+    }
+    
+    #hero p{
+        font-size: 10px;
+        top:50px;
+    }
+    #main-nav li {
+        margin-left:10px;
+    }
+  } 
