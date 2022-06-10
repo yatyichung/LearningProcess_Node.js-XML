@@ -1,0 +1,16 @@
+extends layout 
+
+block layout-content
+    h1.page-title Admin Page
+    a(href="/menu/add", style="color:green;") Add New Link
+    div 
+        each link in links 
+            hr
+            h2(style="text-align:center;") #{link.role}
+                form(action="/menu/edit")
+                    input(type="hidden", name="linkId", value=link._id)
+                    button(type="submit") Edit
+                form(action="/menu/delete")
+                    input(type="hidden", name="linkId", value=link._id)
+                    button(type="submit") Delete
+                

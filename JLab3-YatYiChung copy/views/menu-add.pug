@@ -1,0 +1,21 @@
+extends layout
+
+block layout-content
+    h1 Add A New Link
+    form(method="post", action="/menu/add/link")
+            div
+                label(for="weight") Weight:
+                input(type="number", min="0", value=numLinks, id="weight", name="weight")
+            div
+                label(for="href") URI:
+                input(type="text", id="href", name="href", placeholder="/jungler")
+            div
+                label(for="role") Role:
+                input(type="text", id="role", name="role", placeholder="Jungler")
+            div
+                label(for="name") Name:
+                input(type="text", id="name", name="name", placeholder="Urgot")
+            div
+                label(for="description") Description:
+                input(type="text", id="description", name="description", placeholder="type something...")
+            button(type="submit", value="add-link") Add link

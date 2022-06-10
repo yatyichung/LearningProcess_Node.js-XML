@@ -1,0 +1,25 @@
+extends layout
+
+block layout-content
+    div.content
+        h1.page-title Edit link
+        form(method="post", action="/menu/edit/link")
+            input(type="hidden", name="id", value=editLink._id)
+            div
+                label(for="weight") Weight:
+                input(type="number", min="0",  id="weight", name="weight", value=editLink.weight)
+            div
+                label(for="href") URI:
+                input(type="text", id="href", name="href", placeholder="/jungler", value=editLink.href)
+            div
+                label(for="role") Role:
+                input(type="text", id="role", name="role", placeholder="Jungler", value=editLink.role)
+            div
+                label(for="name") Name:
+                input(type="text", id="name", name="name", placeholder="Urgot", value=editLink.name)
+            div
+                label(for="description") Description:
+                input(type="text", id="description", name="description", placeholder="type something...", value=editLink.description)
+            button(type="submit") Update link
+
+                     

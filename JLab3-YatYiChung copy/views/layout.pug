@@ -1,0 +1,18 @@
+html 
+    head 
+        meta(charset="utf-8")
+        title #{title} | Lab 3
+    body 
+        header
+            h2
+                a(href="/") League of Legend
+            nav 
+                ul 
+                    each link in links
+                        li 
+                            a(href=link.href) #{link.role}
+                            p #{link.description}
+        main 
+            block layout-content
+        footer 
+            p &copy; Copyright Sunny Chung , 2022.
