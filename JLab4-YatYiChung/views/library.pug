@@ -1,0 +1,12 @@
+extends layout 
+
+block layout-content 
+    - let name = library.querySelector("name").textContent 
+    - let address = library.querySelector("address").textContent 
+    - let phoneNumber = library.querySelector("phoneNumber").textContent 
+    - let description = library.querySelector("description").textContent 
+    h1 #{name}
+    p #{address}
+    p #{phoneNumber}
+    p #{description}
+    
