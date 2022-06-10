@@ -8,4 +8,8 @@
 
 <a href="#">Lab 2: Node.js and Pug </a>
 
-<h2>Run the project</h2>
+<h2>Project Setup</h2>
+
+```
+npm install
+```
